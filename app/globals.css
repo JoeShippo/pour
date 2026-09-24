@@ -1,26 +1,114 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-ink: #141414;
+  --color-paper: #ffffff;
+  --color-mist: #f5f5f4;
+  --color-line: #e4e4e2;
+  --color-muted: #6b6b68;
+  --color-accent: #ff5a1f;
+  --color-accent-dark: #d6470f;
+  /* --color-accent: #2f8f5b;
+  --color-accent-dark: #1f6b41; */
 }
+
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-ink: var(--color-ink);
+  --color-paper: var(--color-paper);
+  --color-mist: var(--color-mist);
+  --color-line: var(--color-line);
+  --color-muted: var(--color-muted);
+  --color-accent: var(--color-accent);
+  --color-accent-dark: var(--color-accent-dark);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: var(--font-bebas-neue);
+  --font-sans: var(--font-inter);
+
+  --text-xxs: 0.75rem;
+  --text-xxs--line-height: calc(1 / 0.75);
+  --text-xs: 0.875rem;
+  --text-xs--line-height: calc(1.25 / 0.875);
+  --text-sm: 1rem;
+  --text-sm--line-height: calc(1.5 / 1);
+  --text-base: 1.125rem;
+  --text-base--line-height: calc(1.75 / 1.125);
+  --text-lg: 1.25rem;
+  --text-lg--line-height: calc(1.75 / 1.25);
+  --text-xl: 1.375rem;
+  --text-xl--line-height: calc(2 / 1.375);
+  --text-2xl: 1.625rem;
+  --text-2xl--line-height: calc(2.25 / 1.625);
+  --text-3xl: 2rem;
+  --text-3xl--line-height: calc(2.5 / 2);
+  --text-4xl: 2.375rem;
+  --text-4xl--line-height: calc(2.75 / 2.375);
+  --text-5xl: 3.125rem;
+  --text-5xl--line-height: 1;
+  --text-6xl: 3.875rem;
+  --text-6xl--line-height: 1;
+  --text-7xl: 4.625rem;
+  --text-7xl--line-height: 1;
+  --text-8xl: 6.125rem;
+  --text-8xl--line-height: 1;
+  --text-9xl: 8.125rem;
+  --text-9xl--line-height: 1;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-size: var(--text-base);
+  line-height: var(--text-base--line-height);
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-paper);
+}
+
+@keyframes nav-link-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(var(--float-rotate, 0deg));
+  }
+  50% {
+    transform: translateY(-16px) rotate(var(--float-rotate, 0deg));
+  }
+}
+
+details {
+  interpolate-size: allow-keywords;
+}
+
+details::details-content {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    height 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.3s ease,
+    content-visibility 0.4s allow-discrete;
+}
+
+details[open]::details-content {
+  height: auto;
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  details::details-content {
+    transition: none;
+  }
 }
