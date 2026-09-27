@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const siteUrl = "https://get-poured.co.uk";
+export const siteUrl = "https://www.get-poured.co.uk";
 export const siteName = "POUR";
 export const contactEmail = "hello@get-poured.co.uk";
 export const socialProfiles = [
