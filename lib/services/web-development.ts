@@ -5,14 +5,14 @@ export const webDevelopment: Service = {
   title: "Web Development",
   metaTitle: "Website Design & Development for Breweries, Taprooms and Pubs",
   metaDescription:
-    "Custom websites for breweries, taprooms and pubs. Fast, mobile-first, SEO-ready builds on WordPress or headless, with tap lists, bookings and ongoing support.",
+    "Custom websites for breweries, taprooms and pubs. Fast, mobile-first, SEO-ready builds on WordPress, Shopify or headless, with tap lists, bookings and ongoing support.",
   shortDescription:
     "Fast, custom-built websites for breweries, taprooms and pubs - made to get people through the door, not just look nice on a laptop.",
   longDescription:
-    "Your website is often the first pint someone has with you. We design and build sites that tell your story properly, load in a flash, and make it dead easy to check what's on, book a table or order a case.\n\nEvery build is made for you, not squeezed into a template - modern architecture, mobile-first, SEO-ready from day one, and backed by support that doesn't vanish after launch. WordPress, headless or something fully custom, we'll pick the right tool for the job and build it to keep working long after we've shipped it. Premium work, priced fairly.",
+    "Your website is often the first pint someone has with you. We design and build sites that tell your story properly, load in a flash, and make it dead easy to check what's on, book a table or order a case.\n\nEvery build is made for you, not squeezed into a template - modern architecture, mobile-first, SEO-ready from day one, and backed by support that doesn't vanish after launch. WordPress, Shopify, headless or something fully custom, we'll pick the right tool for the job and build it to keep working long after we've shipped it. Premium work, priced fairly.",
   image: "/images/opt-1.png",
   hook: "Your website is often the first pint someone has with you.",
-  contentIntro: ["Websites for breweries, taprooms and pubs that do more than look pretty on a laptop. We design and build custom websites that tell your story, load in a flash and make it dead easy to check what's pouring, book a table or order a mixed case. We don't start from a template or a theme. Every site is built around your venue, your customers and the way your trade actually works.", "Whether you need a brand new site, a rebuild of one that's past its best, or a shop for your beer club, we build it properly on WordPress, headless or fully custom. Every site is mobile-first, SEO-ready from day one and backed by support that doesn't vanish after launch. It's premium work at a price that won't make you choke on your pint."],
+  contentIntro: ["Websites for breweries, taprooms and pubs that do more than look pretty on a laptop. We design and build custom websites that tell your story, load in a flash and make it dead easy to check what's pouring, book a table or order a mixed case. We don't start from a template or a theme. Every site is built around your venue, your customers and the way your trade actually works.", "Whether you need a brand new site, a rebuild of one that's past its best, or a shop for your beer club, we build it properly on WordPress, Shopify, headless or fully custom. Every site is mobile-first, SEO-ready from day one and backed by support that doesn't vanish after launch. It's premium work at a price that won't make you choke on your pint."],
   contentSpecialist: { title: "Hospitality Web Design Specialists", paragraphs: ["We don't build websites for dentists, accountants and the odd pub. We build them for breweries, taprooms and pubs, and nobody else. That means we already know what your customers are looking for: tap lists, opening hours, events, bookings, directions and a reason to pick you over the place down the road.", "We're fluent in the tools your trade runs on, from Untappd and booking platforms to EPOS and beer club subscriptions, and we connect them so your website keeps up with your cellar. You get a site that looks the part, works on a phone with one bar of signal in a beer garden, and actually fills seats."] },
   contentOfferings: { title: "Web Development Services We Offer", description: "Whether you need a site that tells your story, takes bookings or sells beer while you sleep, here's everything we can build for you." },
   subServices: [
@@ -60,6 +60,14 @@ export const webDevelopment: Service = {
         "Flexible, content-friendly builds on the platform you already know.",
       longDescription:
         "For brands who want a site they can update themselves without calling us every time, we build on WordPress - customised to you, fast, secure and built properly, not a bargain-bin theme with plugins piled on top. You get an editing experience that makes sense, so adding a new beer, event or blog post takes minutes, not a support ticket.",
+    },
+    {
+      title: "Shopify Development",
+      priority: true,
+      shortDescription:
+        "A proper Shopify build for beer clubs, merch and mixed cases.",
+      longDescription:
+        "A lot of breweries and pubs end up on Shopify for the shop side of things, and for good reason - it's built for selling. We design and build Shopify stores properly, from theme customisation to full custom builds, so your beer club, merch and mixed cases look like your brand, not a template. Age verification, delivery zones, click and collect and subscriptions are all set up right, and it stays easy for you to run day to day.",
     },
     {
       title: "Headless Development",
@@ -113,7 +121,6 @@ export const webDevelopment: Service = {
     },
     {
       title: "Support & Maintenance",
-      priority: true,
       shortDescription: "We don't disappear after launch.",
       longDescription:
         "Ongoing updates, monitoring, fixes and small improvements, so your site keeps working long after we've shipped it - without you needing to think about it. Need a new page for a seasonal release or a tweak before a big event? Drop us a line and it's sorted, by people who already know your site inside out.",
@@ -134,6 +141,11 @@ export const webDevelopment: Service = {
       question: "Should I choose WordPress or headless?",
       answer:
         "WordPress is ideal if you want a flexible site you can easily update yourself. Headless suits businesses that need top-end speed, more custom functionality or content shared across several places. We'll recommend the right fit for you, not the one that's most fun for us to build.",
+    },
+    {
+      question: "Do you build Shopify stores?",
+      answer:
+        "Yes. If beer club subscriptions, merch or mixed cases are the main job of the site, Shopify is often the right call, and we build those properly rather than bolting a shop onto a site that isn't built for selling. If it's more of a website with a shop on the side, WordPress or headless might suit you better, and we'll tell you which.",
     },
     {
       question: "Can I update the website myself?",
