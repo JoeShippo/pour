@@ -2,6 +2,8 @@ import { pageMetadata } from "@/lib/seo";
 import Button from "@/components/Button";
 import Link from "next/link";
 import Container from "@/components/Container";
+import ProjectCard from "@/components/ProjectCard";
+import { projects } from "@/lib/projects";
 
 export const metadata = pageMetadata({
   title: "Our Work | Websites & Marketing for Breweries and Pubs | POUR",
@@ -11,8 +13,8 @@ export const metadata = pageMetadata({
 });
 
 const batches = [
-  { number: "01", label: "Your project here" },
-  { number: "02", label: "Waiting to be filled" },
+  { number: "01", project: projects[0] },
+  { number: "02", label: "Your project here" },
   { number: "03", label: "Waiting to be filled" },
 ];
 
@@ -77,23 +79,27 @@ export default function WorkPage() {
       <section className="bg-ink">
         <Container className="py-20 lg:py-28">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-            {batches.map((batch) => (
-              <div
-                key={batch.number}
-                className="flex min-h-64 flex-col justify-between rounded-2xl border border-dashed border-paper/30 p-8 transition-colors hover:border-accent"
-              >
-                <p className="font-display text-7xl leading-none tracking-wide text-paper/30">
-                  {batch.number}
-                </p>
-                <div>
-                  <div className="mb-5 h-px w-full bg-paper/20" />
-                  <p className="font-display text-3xl tracking-wide text-paper">
-                    {batch.label}
+            {batches.map((batch) =>
+              batch.project ? (
+                <ProjectCard key={batch.number} project={batch.project} number={batch.number} />
+              ) : (
+                <div
+                  key={batch.number}
+                  className="flex min-h-64 flex-col justify-between rounded-2xl border border-dashed border-paper/30 p-8 transition-colors hover:border-accent"
+                >
+                  <p className="font-display text-7xl leading-none tracking-wide text-paper/30">
+                    {batch.number}
                   </p>
-                  <p className="mt-2 text-sm text-paper/50">Empty tank. For now.</p>
+                  <div>
+                    <div className="mb-5 h-px w-full bg-paper/20" />
+                    <p className="font-display text-3xl tracking-wide text-paper">
+                      {batch.label}
+                    </p>
+                    <p className="mt-2 text-sm text-paper/50">Empty tank. For now.</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ),
+            )}
           </div>
         </Container>
       </section>

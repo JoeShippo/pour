@@ -7,11 +7,19 @@ import Link from "next/link";
 import Image from "next/image";
 import { services } from "@/lib/services";
 import { faqs } from "@/lib/faqs";
+import ProjectCard from "@/components/ProjectCard";
+import EmptyProjectCard from "@/components/EmptyProjectCard";
+import { projects } from "@/lib/projects";
 import JsonLd from "@/components/JsonLd";
 import { faqJsonLd } from "@/lib/jsonld";
 import { pageMetadata } from "@/lib/seo";
 
 const featuredFaqs = faqs.filter((faq) => faq.featured);
+const featuredProjects = projects.slice(0, 3);
+const emptySlots = ["Your project here", "Waiting to be filled"].slice(
+  0,
+  Math.max(0, 3 - featuredProjects.length),
+);
 
 export const metadata = pageMetadata({
   title: "Websites, Marketing & AI Search for Breweries and Pubs | POUR",
@@ -230,18 +238,46 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="border-t border-line bg-mist">
-        <Container className="py-20">
-          <h2 className="font-display text-5xl md:text-7xl leading-none tracking-wide text-ink">
-            Bottled Projects
-          </h2>
-          <p className="mt-6 max-w-2xl text-muted">
-            We&rsquo;re a new studio, so the shelf&rsquo;s still filling up. The first batch is brewing, and we&rsquo;re looking for a handful of breweries, taprooms and pubs to become founding partners. Could you be the missing ingredient?
-          </p>
-          <div className="mt-10">
-            <Button href="/contact" variant="secondary">
-              Be our first batch
-            </Button>
+      <section className="bg-paper">
+        <Container className="grid grid-cols-1 gap-10 py-20 lg:grid-cols-[35fr_65fr] lg:gap-20">
+          <div>
+            <h2 className="font-display text-5xl md:text-7xl leading-none tracking-wide text-ink">
+              Bottled Projects
+            </h2>
+            <p className="mt-6 text-muted">
+              The shelf is only just filling up, but our first batch is bottled and ready to see. It&rsquo;s a full rebuild for a community pub: a faster site, easier for the team to run and a lot easier for customers to use.
+            </p>
+            <p className="mt-4 text-muted">
+              Fancy being next? We&rsquo;re looking for a few breweries, taprooms and pubs to be our founding partners. You&rsquo;ll get plenty of attention and a very good deal, and we&rsquo;ll get a case study we&rsquo;re proud of.
+            </p>
+            <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
+              <Button href="/work" variant="secondary">
+                See what&rsquo;s bottled so far
+              </Button>
+              <Link
+                href="/contact"
+                className="font-sans text-sm font-semibold uppercase tracking-wide text-ink underline decoration-line underline-offset-4 transition-colors hover:text-accent hover:decoration-accent"
+              >
+                Be our next batch
+              </Link>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-[1.6fr_1fr_1fr]">
+            {featuredProjects.map((project, index) => (
+              <ProjectCard
+                key={project.slug}
+                project={project}
+                number={String(index + 1).padStart(2, "0")}
+                tone="light"
+              />
+            ))}
+            {emptySlots.map((label, index) => (
+              <EmptyProjectCard
+                key={label + index}
+                number={String(featuredProjects.length + index + 1).padStart(2, "0")}
+                label={label}
+              />
+            ))}
           </div>
         </Container>
       </section>
