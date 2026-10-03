@@ -60,23 +60,23 @@ export const projects: Project[] = [
       "A full rebuild of a slow, plugin-heavy WordPress site as a fast custom theme, with bespoke blocks that make What’s On easy to keep up to date.",
     metaTitle: "The Bell & Bear Website Rebuild | Case Study | POUR",
     metaDescription:
-      "How POUR rebuilt The Bell & Bear’s slow, plugin-heavy WordPress site as a fast custom theme with bespoke blocks, lifting Lighthouse performance to 88.",
+      "How POUR rebuilt The Bell & Bear’s slow, plugin-heavy WordPress site as a fast custom theme with bespoke blocks, lifting Lighthouse performance to 97.",
     cardTags: ["WordPress", "Custom theme", "Events & food trucks"],
     tags: ["WordPress", "Custom theme", "Gutenberg blocks", "No page builders", "Events & food trucks", "Investors area", "SEO & migration", "Performance"],
     serviceSlugs: ["web-development"],
     stats: [
       {
-        value: "61 \u2192 88",
+        value: "61 \u2192 97",
         label: "Performance score on mobile, before and after",
       },
       {
-        value: "46 \u2192 88",
+        value: "46 \u2192 97",
         label: "Performance score on desktop, before and after",
       },
     ],
     statsNote: "Google Lighthouse. Work is still ongoing to push the scores higher.",
     scores: [
-      { label: "Performance", mobile: ["61", "88"], desktop: ["46", "88"] },
+      { label: "Performance", mobile: ["61", "97"], desktop: ["46", "97"] },
       { label: "Accessibility", mobile: ["76", "93"], desktop: ["82", "93"] },
       { label: "Best practices", mobile: ["96", "100"], desktop: ["96", "100"] },
       { label: "SEO", mobile: ["85", "92"], desktop: ["85", "92"] },
@@ -181,7 +181,7 @@ export const projects: Project[] = [
       "LiteSpeed Cache",
     ],
     results: [
-      "Google Lighthouse performance up from 61 to 88 on mobile and from 46 to 88 on desktop, with accessibility, best practices, SEO and agentic browsing scores all up as well.",
+      "Google Lighthouse performance up from 61 to 97 on mobile and from 46 to 97 on desktop, with accessibility, best practices, SEO and agentic browsing scores all up as well.",
       "Work is ongoing to squeeze those scores further, including image compression and caching.",
       "Early feedback is that the new site is far easier to use, less clunky, and that the information people want is easy to find.",
     ],

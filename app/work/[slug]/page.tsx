@@ -138,9 +138,9 @@ export default async function ProjectPage({ params }: PageProps<"/work/[slug]">)
               <p className="font-display text-[clamp(2rem,5vw,72px)] leading-[1.05] tracking-wide text-ink">
                 &ldquo;{project.quote.text}&rdquo;
               </p>
-              <footer className="mt-6 text-sm text-muted">
+              {/* <footer className="mt-6 text-sm text-muted">
                 {project.quote.name}, {project.quote.role}
-              </footer>
+              </footer> */}
             </blockquote>
           </Container>
         </section>
