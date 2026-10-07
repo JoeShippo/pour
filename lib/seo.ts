@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 
-export const siteUrl = "https://www.get-poured.co.uk";
-export const siteName = "POUR";
-export const contactEmail = "hello@get-poured.co.uk";
+export const siteUrl = "https://bevv.co.uk";
+export const siteName = "BEVV";
+export const contactEmail = "hello@bevv.co.uk";
 export const socialProfiles = [
-  "https://instagram.com/_getpoured",
-  "https://www.linkedin.com/company/getpoured",
+  "https://instagram.com/bevv.agency",
+  "https://www.linkedin.com/company/bevv",
 ];
 
 const shareImage = {
   url: "/og-image.jpg",
   width: 1200,
   height: 630,
-  alt: "POUR: websites and marketing for breweries, taprooms and pubs",
+  alt: "BEVV: websites and marketing for breweries, taprooms and pubs",
 };
 
 export function pageMetadata({

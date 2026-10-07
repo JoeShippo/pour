@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: PageProps<"/work/[slug]">) {
   const project = getProject(slug);
 
   if (!project) {
-    return { title: "Case study | POUR" };
+    return { title: "Case study | BEVV" };
   }
 
   return pageMetadata({

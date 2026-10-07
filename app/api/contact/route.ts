@@ -42,8 +42,8 @@ export async function POST(request: Request) {
     return Response.json({ error: "Something went wrong. Please email us instead." }, { status: 500 });
   }
 
-  const to = process.env.CONTACT_TO_EMAIL ?? "hello@get-poured.co.uk";
-  const from = process.env.CONTACT_FROM_EMAIL ?? "POUR Website <onboarding@resend.dev>";
+  const to = process.env.CONTACT_TO_EMAIL ?? "hello@bevv.co.uk";
+  const from = process.env.CONTACT_FROM_EMAIL ?? "BEVV website <onboarding@resend.dev>";
 
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",

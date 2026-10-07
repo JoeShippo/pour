@@ -4,7 +4,7 @@ import Button from "@/components/Button";
 import Container from "@/components/Container";
 
 export const metadata = pageMetadata({
-  title: "To Pour or Not | Why POUR | Websites & Marketing for Breweries and Pubs",
+  title: "Why BEVV | Websites, Marketing & AI Search for Breweries and Pubs",
   description:
     "Why breweries, taprooms and pubs choose a specialist. Custom websites, marketing and AI search from people who know the trade, at a price that won't make you wince.",
   path: "/about",
@@ -33,9 +33,9 @@ export default function AboutPage() {
       <section className="w-full bg-paper">
         <Container className="grid grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:items-end lg:gap-16 lg:py-28">
           <h1 className="font-display text-[min(180px,max(9vw,min(28vw,7rem)))] leading-[0.85] tracking-wide text-ink">
-            To Pour
+            Why
             <br />
-            or Not
+            BEVV
           </h1>
           <div className="max-w-xl space-y-5 text-ink/70">
             <p>
@@ -105,14 +105,14 @@ export default function AboutPage() {
       <section className="border-y border-line bg-mist">
         <Container className="py-20 text-center lg:py-28">
           <p className="font-display text-[clamp(3rem,8vw,140px)] leading-[0.9] tracking-wide text-ink">
-            So, do you pour, <span className="text-accent">or not?</span>
+            So, shall we <span className="text-accent">get a round in?</span>
           </p>
         </Container>
       </section>
 
       <section className="w-full bg-paper">
         <Container className="py-20 lg:py-28">
-          <h2 className="font-display text-3xl leading-tight tracking-wide text-ink sm:text-5xl">The case for pouring</h2>
+          <h2 className="font-display text-3xl leading-tight tracking-wide text-ink sm:text-5xl">The case for a specialist</h2>
           <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
             <div className="border-t border-ink pt-6">
               <p className="font-display text-4xl tracking-wide text-accent">01</p>
@@ -187,7 +187,7 @@ export default function AboutPage() {
           <div className="relative aspect-square w-full overflow-hidden rounded-2xl border border-line bg-mist">
             <Image
               src="/images/joe.png"
-              alt="Joe, founder of POUR"
+              alt="Joe, founder of BEVV"
               fill
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="object-cover"
@@ -197,7 +197,7 @@ export default function AboutPage() {
             <h2 className="font-display text-3xl leading-tight tracking-wide text-ink sm:text-5xl">Who&rsquo;s behind the bar</h2>
             <div className="mt-6 max-w-2xl space-y-5 text-muted">
               <p>
-                I&rsquo;m Joe. I started POUR because I kept watching
+                I&rsquo;m Joe. I started BEVV because I kept watching
                 brilliant breweries and pubs get treated like every other
                 small business, handed the same templates, the same jargon and
                 the same invoices as an estate agent. But this trade has its
@@ -206,18 +206,18 @@ export default function AboutPage() {
                 people in its corner who get that.
               </p>
               <p>
-                POUR is built around exactly that. It&rsquo;s small enough to
+                BEVV is built around exactly that. It&rsquo;s small enough to
                 know your beer list and sharp enough to make it sell. When you
                 work with us, you work with me, not an account manager who&rsquo;s
                 never set foot in a taproom.
               </p>
               <p className="font-display text-3xl tracking-wide text-ink">
-                So, to pour, or not? We think you already know.
+                So, shall we get a round in? We think you already know.
               </p>
             </div>
             <div className="mt-8">
               <Button href="/contact">
-                Get Poured
+                Get in touch
               </Button>
             </div>
           </div>

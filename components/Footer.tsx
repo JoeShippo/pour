@@ -5,10 +5,10 @@ import FooterNotes from "./FooterNotes";
 import { FaEnvelope, FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 
 const social = [
-  { href: "https://instagram.com/_getpoured", label: "Instagram", Icon: FaInstagram },
+  { href: "https://instagram.com/bevv.agency", label: "Instagram", Icon: FaInstagram },
   //{ href: "https://facebook.com/getpoured", label: "Facebook", Icon: FaFacebookF },
-  { href: "https://www.linkedin.com/company/getpoured", label: "LinkedIn", Icon: FaLinkedinIn },
-  { href: "mailto:hello@get-poured.co.uk", label: "Email", Icon: FaEnvelope },
+  { href: "https://www.linkedin.com/company/bevv", label: "LinkedIn", Icon: FaLinkedinIn },
+  { href: "mailto:hello@bevv.co.uk", label: "Email", Icon: FaEnvelope },
 ];
 
 const ctaBackground =
@@ -25,14 +25,14 @@ export default function Footer() {
           <p className="text-paper/80">
             Brewery, taproom or pub, tell us what&rsquo;s going on. The site
             that&rsquo;s seen better days, the tap list nobody updates, the
-            quiet Tuesdays. We&rsquo;ll listen, then pour you a plan.
+            quiet Tuesdays. We&rsquo;ll listen, then put a plan together.
           </p>
           <p className="font-display text-2xl tracking-wide text-paper">
             The first pint&rsquo;s on us: a free 30-minute call and a health
             check of your website, search and AI visibility.
           </p>
           <Button href="/contact" variant="secondary" className="!border-paper !text-paper hover:!bg-paper hover:!text-accent">
-            Get Poured
+            Get in touch
           </Button>
         </div>
       </section>
@@ -40,12 +40,12 @@ export default function Footer() {
       <footer className="bg-ink">
         <div className="flex flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between 2xl:px-16">
           <div className="max-w-xl">
-            <p className="font-display text-2xl tracking-wide text-paper">POUR</p>
+            <p className="font-display text-2xl tracking-wide text-paper">BEVV</p>
             <p className="mt-1 text-sm text-paper/70">
               Websites and marketing for people who pull pints, not PowerPoints.
             </p>
             <p className="mt-1 text-sm text-paper/70">
-              Custom websites, digital marketing and AI search for breweries, taprooms and pubs across the UK. It&rsquo;s made properly, priced fairly and poured with care.
+              Custom websites, digital marketing and AI search for breweries, taprooms and pubs across the UK. It&rsquo;s made properly, priced fairly and served with care.
             </p>
             <p className="mt-4 text-xs text-paper/70">
                 Please drink responsibly. We&rsquo;ll handle the marketing.
@@ -57,7 +57,7 @@ export default function Footer() {
               href="/contact"
               className="font-sans text-sm font-semibold uppercase tracking-wide text-paper transition-colors hover:text-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper"
             >
-              Get Poured
+              Get in touch
             </Link>
 
             <div className="flex items-center gap-5">
@@ -87,7 +87,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-xs text-paper/60">
-              &copy; {new Date().getFullYear()} POUR. All rights reserved.
+              &copy; {new Date().getFullYear()} BEVV. All rights reserved.
             </p>
           </div>
         </div>

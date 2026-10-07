@@ -58,9 +58,9 @@ export const projects: Project[] = [
     tagline: "From five years of bolted-on plugins to a site people actually enjoy using.",
     summary:
       "A full rebuild of a slow, plugin-heavy WordPress site as a fast custom theme, with bespoke blocks that make What’s On easy to keep up to date.",
-    metaTitle: "The Bell & Bear Website Rebuild | Case Study | POUR",
+    metaTitle: "The Bell & Bear Website Rebuild | Case Study | BEVV",
     metaDescription:
-      "How POUR rebuilt The Bell & Bear’s slow, plugin-heavy WordPress site as a fast custom theme with bespoke blocks, lifting Lighthouse performance to 97.",
+      "How BEVV rebuilt The Bell & Bear’s slow, plugin-heavy WordPress site as a fast custom theme with bespoke blocks, lifting Lighthouse performance to 97.",
     cardTags: ["WordPress", "Custom theme", "Events & food trucks"],
     tags: ["WordPress", "Custom theme", "Gutenberg blocks", "No page builders", "Events & food trucks", "Investors area", "SEO & migration", "Performance"],
     serviceSlugs: ["web-development"],
@@ -139,7 +139,7 @@ export const projects: Project[] = [
     quote: {
       text: "The old site had become a struggle for us to keep up to date. The new one is so much easier to use, and our customers can finally find what\u2019s on at a glance.",
       name: "Joe Shipton",
-      role: "Manager of The Bell & Bear and founder of POUR",
+      role: "Manager of The Bell & Bear and founder of BEVV",
     },
     showGallery: false,
     images: [

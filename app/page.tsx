@@ -22,7 +22,7 @@ const emptySlots = ["Your project here", "Waiting to be filled"].slice(
 );
 
 export const metadata = pageMetadata({
-  title: "Websites, Marketing & AI Search for Breweries and Pubs | POUR",
+  title: "Websites, Marketing & AI Search for Breweries and Pubs | BEVV",
   description:
     "Custom websites, digital marketing and AI search for breweries, taprooms and pubs. Premium work at a fair price. The first pint's on us.",
   path: "/",
@@ -130,7 +130,7 @@ export default function Home() {
           </div>
         </div>
         <div className="absolute bottom-6 right-6 z-10 hidden max-w-sm md:block 2xl:bottom-10 2xl:right-16">
-          <h2 className="text-2xl font-display leading-relaxed text-paper/90">We Are Pour</h2>
+          <h2 className="text-2xl font-display leading-relaxed text-paper/90">We are BEVV</h2>
           <p className="text-sm leading-relaxed text-paper/60 mb-3">
             We build websites, run marketing and sort AI search for independent breweries, taprooms and pubs. No agency-speak. No stock photos of laptops.
           </p>
@@ -156,7 +156,7 @@ export default function Home() {
             </div>
 
             <div className="">
-              <h2 className="font-display text-5xl md:text-7xl tracking-wide text-ink">We&rsquo;re POUR</h2>
+              <h2 className="font-display text-5xl md:text-7xl tracking-wide text-ink">We&rsquo;re BEVV</h2>
               <div className="mt-6 space-y-5 text-muted">
                 <p>
                   The trade&rsquo;s having a rough time of it. Costs are up, margins are down, and too many websites still look like they were built in the MySpace era. We want to be part of the fix, with premium work at prices that don&rsquo;t sting.
@@ -167,7 +167,7 @@ export default function Home() {
                 <p>
                   Think of us as the bit of the business you don&rsquo;t have to think about. We take the load off, so you can get back to what you&rsquo;re actually good at.
                 </p>
-                <h3 className="font-display text-3xl">Why POUR?</h3>
+                <h3 className="font-display text-3xl">Why BEVV?</h3>
                 <p>
                   We only work with breweries, taprooms and pubs, so you&rsquo;ll never have to explain what a firkin is or why bank holidays change everything. Everything we make is built for you. There are no templates, no bloated packages and no paying for things you don&rsquo;t need.
                 </p>
@@ -212,7 +212,7 @@ export default function Home() {
       <section className="bg-ink">
         <Container className="py-20 lg:py-28">
           <h2 className="font-display text-5xl md:text-7xl leading-none tracking-wide text-paper">
-            How we pour
+            How it works
           </h2>
           <p className="mt-6 max-w-2xl text-paper/70">
             No mystery, no drawn-out pitch process. Here&rsquo;s how it goes.

@@ -7,15 +7,15 @@ import JsonLd from "@/components/JsonLd";
 import { faqJsonLd } from "@/lib/jsonld";
 
 export const metadata = pageMetadata({
-  title: "Contact POUR | Get in Touch | Websites & Marketing for Breweries and Pubs",
+  title: "Contact BEVV | Get in Touch | Websites & Marketing for Breweries and Pubs",
   description:
-    "Get in touch with POUR about your brewery, taproom or pub's website, marketing or AI search. The first pint's on us: a free 30-minute intro call and health check.",
+    "Get in touch with BEVV about your brewery, taproom or pub's website, marketing or AI search. The first pint's on us: a free 30-minute intro call and health check.",
   path: "/contact",
 });
 
 const links = [
-  { label: "Email", value: "hello@get-poured.co.uk", href: "mailto:hello@get-poured.co.uk" },
-  { label: "Instagram", value: "@getpoured", href: "https://instagram.com/_getpoured" },
+  { label: "Email", value: "hello@bevv.co.uk", href: "mailto:hello@bevv.co.uk" },
+  { label: "Instagram", value: "@bevv.agency", href: "https://instagram.com/bevv.agency" },
   //{ label: "Facebook", value: "@getpoured", href: "https://facebook.com/getpoured" },
 ];
 
@@ -44,9 +44,9 @@ export default function ContactPage() {
       <section className="w-full bg-paper">
         <Container className="grid grid-cols-1 gap-10 py-20 lg:grid-cols-2 lg:items-end lg:gap-16 lg:py-28">
           <h1 className="font-display text-[min(180px,max(9vw,min(28vw,7rem)))] leading-[0.85] tracking-wide text-ink">
-            Get
+            Get in
             <br />
-            Poured
+            touch
           </h1>
           <div className="max-w-xl">
             <p className="font-display text-3xl leading-tight tracking-wide text-ink sm:text-4xl">
@@ -106,7 +106,7 @@ export default function ContactPage() {
       <section className="bg-ink">
         <Container className="py-20 lg:py-28">
           <h2 className="font-display text-3xl leading-tight tracking-wide text-paper sm:text-5xl">
-            Why POUR
+            Why BEVV
           </h2>
           <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-3 md:gap-8">
             {reasons.map((reason) => (

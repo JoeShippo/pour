@@ -5,7 +5,7 @@ import Container from "@/components/Container";
 import { services } from "@/lib/services";
 
 export const metadata = pageMetadata({
-  title: "Services | Websites, Marketing & GEO for Breweries and Pubs | POUR",
+  title: "Services | Websites, Marketing & GEO for Breweries and Pubs | BEVV",
   description:
     "Custom websites, digital marketing and AI search optimisation for breweries, taprooms and pubs. It's premium work at a fair price, built around your venue.",
   path: "/services",

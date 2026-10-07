@@ -2,14 +2,14 @@ import { pageMetadata } from "@/lib/seo";
 import Container from "@/components/Container";
 
 export const metadata = pageMetadata({
-  title: "Privacy Policy | POUR",
+  title: "Privacy Policy | BEVV",
   description:
-    "How POUR collects, uses and protects your personal data when you visit get-poured.co.uk or get in touch.",
+    "How BEVV collects, uses and protects your personal data when you visit bevv.co.uk or get in touch.",
   path: "/privacy",
 });
 
-const lastUpdated = "23 September 2026";
-const email = "hello@get-poured.co.uk";
+const lastUpdated = "6 October 2026";
+const email = "hello@bevv.co.uk";
 
 const h2 = "font-display text-4xl leading-none tracking-wide text-ink sm:text-5xl";
 const list = "list-disc space-y-2 pl-6 marker:text-accent";
@@ -41,8 +41,8 @@ export default function PrivacyPage() {
             <div className="space-y-4">
               <h2 className={h2}>Who we are</h2>
               <p>
-                This website, get-poured.co.uk, is run by Joe Shipton, a sole
-                trader trading as POUR. I&rsquo;m the &ldquo;controller&rdquo;
+                This website, bevv.co.uk, is run by Joe Shipton, a sole
+                trader trading as BEVV. I&rsquo;m the &ldquo;controller&rdquo;
                 of the personal data described here, which means I decide how
                 and why it&rsquo;s used. I follow the UK GDPR and the Data
                 Protection Act 2018.

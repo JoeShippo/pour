@@ -6,9 +6,9 @@ import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/projects";
 
 export const metadata = pageMetadata({
-  title: "Our Work | Websites & Marketing for Breweries and Pubs | POUR",
+  title: "Our Work | Websites & Marketing for Breweries and Pubs | BEVV",
   description:
-    "POUR is new and the first batch is in the tank. We're looking for a few breweries, taprooms and pubs to become our founding partners.",
+    "BEVV is new and the first batch is in the tank. We're looking for a few breweries, taprooms and pubs to become our founding partners.",
   path: "/work",
 });
 
@@ -34,7 +34,7 @@ export default function WorkPage() {
             </p>
             <p className="mt-6 text-ink/70">
               Every good brewery starts with an empty tank, and so does every
-              good portfolio. POUR is brand new, which means this page is
+              good portfolio. BEVV is brand new, which means this page is
               waiting for its first batch, and it could be yours.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">

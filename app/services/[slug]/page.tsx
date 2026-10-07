@@ -22,13 +22,13 @@ export async function generateMetadata({
   const service = services.find((item) => item.slug === slug);
 
   if (!service) {
-    return { title: "Service | POUR" };
+    return { title: "Service | BEVV" };
   }
 
   const title = service.metaTitle ?? service.title;
 
   return pageMetadata({
-    title: title.includes("POUR") ? title : `${title} | POUR`,
+    title: title.includes("BEVV") ? title : `${title} | BEVV`,
     description: service.metaDescription ?? service.shortDescription,
     path: `/services/${service.slug}`,
   });

@@ -10,7 +10,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services on Tap" },
   { href: "/work", label: "Bottled Projects" },
-  { href: "/about", label: "To Pour or Not" },
+  { href: "/about", label: "Why BEVV" },
 ];
 
 type NavLink = { href: string; label: string };
@@ -68,12 +68,12 @@ export default function Nav({ serviceLinks }: { serviceLinks: NavLink[] }) {
             overlay ? "text-paper" : "text-ink"
           }`}
         >
-          POUR
+          BEVV
         </Link>
 
         <div className="flex items-center gap-4">
           {/* <Button href="/contact" className="!px-5 !py-2 text-xs">
-            Get Poured
+            Get in touch
           </Button> */}
 
           <button
@@ -223,7 +223,7 @@ export default function Nav({ serviceLinks }: { serviceLinks: NavLink[] }) {
                       open ? "animate-[nav-link-in_0.6s_ease_both]" : "opacity-0"
                     }`}
                   >
-                    Get Poured
+                    Get in touch
                   </Link>
                 </li>
               </ul>

@@ -15,7 +15,7 @@ export default function ContactForm() {
     return (
       <div className="rounded-2xl border border-line bg-mist p-8">
         <p className="font-display text-2xl tracking-wide text-ink">
-          Poured.
+          Sent.
         </p>
         <p className="mt-2 text-muted">
           Thanks &mdash; we&rsquo;ll be in touch shortly.
@@ -107,7 +107,7 @@ export default function ContactForm() {
       )}
 
       <Button type="submit" disabled={sending}>
-        {sending ? "Sending…" : "Get Poured"}
+        {sending ? "Sending…" : "Send message"}
       </Button>
     </form>
   );

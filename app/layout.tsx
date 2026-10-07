@@ -22,7 +22,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Websites, Marketing & AI Search for Breweries and Pubs | POUR",
+  title: "Websites, Marketing & AI Search for Breweries and Pubs | BEVV",
   description:
     "Custom websites, digital marketing and AI search for breweries, taprooms and pubs. Premium work at a fair price. The first pint's on us.",
 };
