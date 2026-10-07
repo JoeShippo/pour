@@ -16,6 +16,7 @@ export const metadata = pageMetadata({
 const links = [
   { label: "Email", value: "hello@bevv.co.uk", href: "mailto:hello@bevv.co.uk" },
   { label: "Instagram", value: "@bevv.agency", href: "https://instagram.com/bevv.agency" },
+  { label: "LinkedIn", value: "BEVV on LinkedIn", href: "https://www.linkedin.com/company/bevv" },
   //{ label: "Facebook", value: "@getpoured", href: "https://facebook.com/getpoured" },
 ];
 
