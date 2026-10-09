@@ -10,6 +10,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services on Tap" },
   { href: "/work", label: "Bottled Projects" },
+  { href: "/blog", label: "Cellar Notes" },
   { href: "/about", label: "Why BEVV" },
 ];
 

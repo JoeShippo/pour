@@ -1,8 +1,9 @@
 import { contactEmail, siteName, siteUrl, socialProfiles } from "@/lib/seo";
 import type { Service } from "@/lib/services";
 import type { FAQ } from "@/lib/faqs";
+import type { Post } from "@/lib/blog";
 
-const organizationId = `${siteUrl}/#organization`;
+export const organizationId = `${siteUrl}/#organization`;
 
 export const organizationJsonLd = {
   "@context": "https://schema.org",
@@ -78,5 +79,25 @@ export function serviceJsonLd(service: Service) {
         })),
       },
     }),
+  };
+}
+
+export function articleJsonLd(post: Post) {
+  const url = `${siteUrl}/blog/${post.slug}`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.metaDescription,
+    datePublished: post.date,
+    dateModified: post.updated ?? post.date,
+    inLanguage: "en-GB",
+    url,
+    mainEntityOfPage: url,
+    image: `${siteUrl}/og-image.jpg`,
+    keywords: post.targetKeyword,
+    author: { "@type": "Person", name: "Joe Shipton", url: `${siteUrl}/about` },
+    publisher: { "@id": organizationId },
   };
 }
